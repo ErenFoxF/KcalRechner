@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale-1"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>Kcal_Rechner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="container_header">
+        <div class="header_logo">
+          <img src="../img/LOGO_Final.png" alt="LOGO" />
+        </div>
+        <nav class="main_navbar">
+          <ul class="navbar_menu">
+            <li class="navbar_item"><a href="index.html">Home</a></li>
+            <li class="navbar_item"><a href="pages/page2.html">total</a></li>
+            <li class="navbar_item">
+              <a href="pages/page3.html">nutrision</a>
+            </li>
+            <li class="navbar_item">
+              <a href="pages/page4.html">allgemein</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger"><span></span></div>
+      </div>
+    </header>
+    <section class="section-body">
+      <header class="header_body">
+        <div class="container one-top"><h1>Kalorienbedarf berechnen</h1></div>
+      </header>
+      <article class="grundcalorienrechner">
+        <header class="calrech_heder"><h2>Grundumsatz</h2></header>
+        <div class="check_male">
+          <label class="form-control" for="check_male">Male</label>
+          <input
+            onclick="maleCheck()"
+            id="check_male"
+            class="check_male-rad"
+            type="radio"
+            name="input_male"
+          />
+          <label class="form-control" for="check_male">Female</label>
+          <input
+            onclick="maleCheck()"
+            id="check_male"
+            class="check_male-rad"
+            type="radio"
+            name="input_male"
+          />
+        </div>
+        <div class="container_one">
+          <input
+            onchange="getGewicht()"
+            autocomplete="off"
+            id="masse_kg"
+            type="text"
+            placeholder="Gewicht in Kg"
+          />
+        </div>
+        <div class="container_one">
+          <input
+            onchange="getHeight()"
+            autocomplete="off"
+            id="height_sm"
+            type="text"
+            placeholder="Height in cm"
+          />
+        </div>
+        <div class="container_one">
+          <input
+            onchange="getYears() "
+            autocomplete="off"
+            id="years"
+            type="text"
+            placeholder="Wie alt bist du?"
+          />
+        </div>
+        <div class="gcrech_text">
+          <p>Dein Grundunsatz bedarf ist:</p>
+          <p class="alldone" id="alldone">0</p>
+        </div>
+        <div class="container_one">
+          <button
+            class="sp_btn"
+            onclick="calcKcal(); display();"
+            id="alldone-btn"
+          >
+            Speichern
+          </button>
+          <button
+            onclick="document.location= 'page2.html'"
+            class="weiter sp_btn"
+          >
+            Weiter
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

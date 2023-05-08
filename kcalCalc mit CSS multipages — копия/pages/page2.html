@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale-1"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>Kcal_Rechner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="container_header">
+        <div class="header_logo">
+          <img src="../img/LOGO_Final.png" alt="LOGO" />
+        </div>
+        <nav class="main_navbar">
+          <ul class="navbar_menu">
+            <li class="navbar_item"><a href="../index.html">Home</a></li>
+            <li class="navbar_item"><a href="page2.html">total</a></li>
+            <li class="navbar_item"><a href="page3.html">nutrision</a></li>
+            <li class="navbar_item"><a href="page4.html">allgemein</a></li>
+          </ul>
+        </nav>
+        <div class="burger"><span></span></div>
+      </div>
+    </header>
+    <article class="totalcalorienrechner">
+      <header class="totalcal_header allg two"><h2>Allgemeinbedarf</h2></header>
+      <div class="training_check two"><p>Wie oft trainierst du?</p></div>
+      <div class="container_grid">
+        <div class="drop-down">
+          <select onmousedown="dropDown(event,this)">
+            <option id="option">5-7 mal pro Woche</option>
+          </select>
+          <div class="check-training">
+            <ul class="menu" id="menu">
+              <li
+                value="0"
+                class="trainProg"
+                id="Gar nicht"
+                onclick="item(this); calcfundKcal()"
+              >
+                Gar nicht
+              </li>
+              <li
+                class="trainProg"
+                value="1"
+                id="1-3 mal pro Woche"
+                onclick="item(this); calcfundKcal()"
+              >
+                1-3 mal pro Woche
+              </li>
+              <li
+                value="2"
+                class="trainProg"
+                id="3-4 mal pro Woche"
+                onclick="item(this); calcfundKcal()"
+              >
+                3-4 mal pro Woche
+              </li>
+              <li
+                value="3"
+                class="trainProg"
+                id="5-7 mal pro Woche"
+                onclick="item(this); calcfundKcal()"
+              >
+                5-7 mal pro Woche
+              </li>
+              <li
+                value="4"
+                class="trainProg"
+                id="2+ mal pro Tag"
+                onclick="item(this); calcfundKcal()"
+              >
+                2+ mal pro Tag
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container_one four">
+          <div class="gcontr">
+            <label class="gewichtcontrol" for="check-aboderzu">Abnehmen</label>
+            <input
+              onclick="getWillung()"
+              id="check-aboderzu"
+              type="radio"
+              name="willung"
+              class="input_willung"
+            />
+          </div>
+          <div class="gcontr">
+            <label class="gewichtcontrol" for="check-aboderzu"
+              >Stabill bleiben</label
+            >
+            <input
+              onclick="getWillung()"
+              id="check-aboderzu"
+              type="radio"
+              name="willung"
+              class="input_willung"
+            />
+          </div>
+          <div class="gcontr">
+            <label class="gewichtcontrol" for="check-aboderzu">Zunehmen</label>
+            <input
+              onclick="getWillung()"
+              id="check-aboderzu"
+              type="radio"
+              name="willung"
+              class="input_willung"
+            />
+          </div>
+        </div>
+        <div class="container_one endpart1">
+          <input
+            onchange="getWillungszhl()"
+            class="ziel"
+            id="willungszahl1"
+            type="text"
+            placeholder="Wie viel in Kg pro monat"
+          />
+          <p>
+            Dein algenein bedarf ist:
+            <span class="alldone" id="total_display"></span>
+          </p>
+          <div class="btn_block">
+            <button
+              class="sp_btn"
+              onclick="calcfundKcal(); endlich(); displayTotal()"
+            >
+              Berechnen
+            </button>
+            <button
+              onclick="document.location = 'page3.html';"
+              class="weiter sp_btn"
+            >
+              Weiter
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.header-main {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 120px;
+}
+.container_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_logo img {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  .container_header {
+    justify-content: center;
+  }
+  .header_logo img {
+    height: 60px;
+    width: 60px;
+  }
+  .burger {
+    margin-left: 100px;
+  }
+}

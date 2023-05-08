@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale-1"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>Kcal_Rechner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body onload="calcProt();calcFet(); calcCarb()">
+    <header class="header-main">
+      <div class="container_header">
+        <div class="header_logo">
+          <img src="../img/LOGO_Final.png" alt="LOGO" />
+        </div>
+        <nav class="main_navbar">
+          <ul class="navbar_menu">
+            <li class="navbar_item"><a href="../index.html">Home</a></li>
+            <li class="navbar_item"><a href="page2.html">total</a></li>
+            <li class="navbar_item"><a href="page3.html">nutrision</a></li>
+            <li class="navbar_item"><a href="page4.html">allgemein</a></li>
+          </ul>
+        </nav>
+        <div class="burger"><span></span></div>
+      </div>
+    </header>
+    <article class="nutrisionrechner">
+      <div class="container_grid">
+        <h2 class="nutr allg">Nutrition</h2>
+      </div>
+      <div class="container_grid">
+        <h2 class="prot">Protainbedarf</h2>
+        <p>
+          Dein Bedarf betr'gt: <span class="alldone" id="protrinsumme"></span>
+        </p>
+      </div>
+
+      <div class="container_grid">
+        <h1 class="fett">Fatbedarf</h1>
+        <p>Dein Bedarf betr'gt: <span class="alldone" id="Fetsumme"></span></p>
+      </div>
+
+      <div class="container_grid">
+        <h2 class="carbs">Carbsbedarf</h2>
+        <p>
+          Dein Bedarf betr'gt: <span class="alldone" id="carbsbedarf"></span>
+        </p>
+      </div>
+      <div class="container_grid">
+        <button
+          onclick="document.location = 'page4.html';"
+          class="weiter sp_btn"
+        >
+          Weiter
+        </button>
+      </div>
+    </article>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+#training_ch {
+  transform: translateY(0.4em);
+}
+.training_check {
+  font-weight: 600;
+  font-size: 20px;
+}
+.radios1,
+.radios2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.radios1 {
+  margin-right: 20px;
+}
+.train {
+  border: 1px solid #ddbeaa;
+}
+/* .check_willung {
+  display: flex;
+  justify-content: center;
+} */
+.gewichtcontrol {
+  margin-right: 0px;
+  font-weight: 500;
+  font-size: 20px;
+  transform: translateY(-0.1em);
+}
+/* .gcontr .input_willung {
+  transform: translateY(10px) !important;
+  transform: translateX(0.1em) !important;
+} */
+.endpart1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.ziel {
+  margin: 30px !important;
+}
+.btn_cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.three {
+  width: 100%;
+}
+/* #total_display {
+  font-weight: 700;
+  font-size: 30px;
+} */
+.gcontr {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .gewichtcontrol {
+    font-size: 16px;
+  }
+  .gcontr {
+    margin-bottom: 10px;
+  }
+  .four {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}

@@ -1,0 +1,27 @@
+.header_body {
+  display: flex;
+  justify-content: center;
+}
+.header_body h1 {
+  color: rgb(71, 59, 59);
+  font-weight: 700;
+  font-size: 40px;
+  padding: 10px 20px;
+  border: 2px solid rgb(71, 59, 59);
+  border-radius: 30px;
+}
+.calrech_heder {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .header_body h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .header_body h1 {
+    font-size: 20px;
+  }
+}
